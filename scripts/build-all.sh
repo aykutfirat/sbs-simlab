@@ -24,4 +24,8 @@ echo "--- Building Newsvendor ---"
 cd games/newsvendor && npm install --include=dev && npm run build && cd ../..
 
 echo ""
+echo "--- Building Moon Survival ---"
+cd games/moon-survival && npm install --include=dev && npm run build && cd ../..
+
+echo ""
 echo "=== All builds complete ==="

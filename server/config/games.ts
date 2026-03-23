@@ -36,4 +36,13 @@ export const games: GameConfig[] = [
     icon: '🥯',
     status: 'active',
   },
+  {
+    slug: 'moon-survival',
+    name: 'NASA Moon Survival',
+    description: 'Rank survival items individually, then as a team. Discover why groups outperform individuals.',
+    type: 'multiplayer',
+    needsSocketIO: true,
+    icon: '🌙',
+    status: 'active',
+  },
 ];

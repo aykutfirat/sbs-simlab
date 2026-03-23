@@ -45,8 +45,8 @@ export const games = [
     description: 'Rank survival items individually, then as a team. Discover why groups outperform individuals.',
     concepts: ['Decision Making', 'Group Dynamics', 'Cognitive Bias', 'Consensus'],
     frameworks: ['IMMERSE', 'SAIL'],
-    url: null,
-    status: 'coming-soon',
+    url: '/moon-survival',
+    status: 'live',
     icon: 'moon',
   },
   {
