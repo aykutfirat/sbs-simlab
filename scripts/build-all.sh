@@ -1,0 +1,27 @@
+#!/bin/bash
+set -e
+
+echo "=== SBS SimLab — Full Build ==="
+
+echo ""
+echo "--- Installing root dependencies ---"
+npm install
+
+echo ""
+echo "--- Building landing page ---"
+cd landing && npm install && npm run build && cd ..
+
+echo ""
+echo "--- Building Beer Game ---"
+cd games/beer-game && npm install && npm run build && cd ../..
+
+echo ""
+echo "--- Building People Express ---"
+cd games/people-express && npm install && npm run build && cd ../..
+
+echo ""
+echo "--- Building Newsvendor ---"
+cd games/newsvendor && npm install && npm run build && cd ../..
+
+echo ""
+echo "=== All builds complete ==="

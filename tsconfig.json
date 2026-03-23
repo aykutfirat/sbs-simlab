@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "resolveJsonModule": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["server/**/*.ts", "games/*/src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "games/*/node_modules"]
+}

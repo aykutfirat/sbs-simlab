@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "noEmit": true,
+    "paths": {
+      "../src/*": ["./src/*"]
+    }
+  },
+  "include": ["server/**/*.ts", "src/types.ts", "src/engine/**/*.ts", "src/utils/formatting.ts"]
+}
