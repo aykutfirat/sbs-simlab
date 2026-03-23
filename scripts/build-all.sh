@@ -5,23 +5,23 @@ echo "=== SBS SimLab — Full Build ==="
 
 echo ""
 echo "--- Installing root dependencies ---"
-npm install
+npm install --include=dev
 
 echo ""
 echo "--- Building landing page ---"
-cd landing && npm install && npm run build && cd ..
+cd landing && npm install --include=dev && npm run build && cd ..
 
 echo ""
 echo "--- Building Beer Game ---"
-cd games/beer-game && npm install && npm run build && cd ../..
+cd games/beer-game && npm install --include=dev && npm run build && cd ../..
 
 echo ""
 echo "--- Building People Express ---"
-cd games/people-express && npm install && npm run build && cd ../..
+cd games/people-express && npm install --include=dev && npm run build && cd ../..
 
 echo ""
 echo "--- Building Newsvendor ---"
-cd games/newsvendor && npm install && npm run build && cd ../..
+cd games/newsvendor && npm install --include=dev && npm run build && cd ../..
 
 echo ""
 echo "=== All builds complete ==="
