@@ -10,6 +10,7 @@ import { registerBeerGameSockets } from './sockets/beer-game.js';
 import { registerPeopleExpressSockets } from './sockets/people-express.js';
 import { registerNewsvendorSockets } from './sockets/newsvendor.js';
 import { registerMoonSurvivalSockets } from './sockets/moon-survival.js';
+import { registerPricingWarSockets } from './sockets/pricing-war.js';
 
 // API routes
 import { registerNewsvendorApi } from './api/newsvendor.js';
@@ -53,6 +54,16 @@ app.post('/people-express/api/verify-password', (req, res) => {
   }
 });
 
+// Pricing War password verification
+app.post('/pricing-war/api/verify-password', (req, res) => {
+  const { password } = req.body;
+  if (!INSTRUCTOR_PASSWORD || password === INSTRUCTOR_PASSWORD) {
+    res.json({ success: true });
+  } else {
+    res.status(401).json({ success: false, error: 'Invalid password.' });
+  }
+});
+
 // Moon Survival password verification
 app.post('/moon-survival/api/verify-password', (req, res) => {
   const { password } = req.body;
@@ -82,6 +93,7 @@ registerBeerGameSockets(io.of('/beer-game'));
 registerPeopleExpressSockets(io.of('/people-express'));
 registerNewsvendorSockets(io.of('/newsvendor'));
 registerMoonSurvivalSockets(io.of('/moon-survival'));
+registerPricingWarSockets(io.of('/pricing-war'));
 
 // ── Static File Serving ───────────────────────────────────────
 

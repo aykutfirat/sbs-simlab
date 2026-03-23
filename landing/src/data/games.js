@@ -32,11 +32,11 @@ export const games = [
   {
     id: 'pricing-war',
     title: 'Pricing War Arena',
-    description: 'Compete against rival e-commerce stores in a real-time pricing simulation.',
-    concepts: ['E-Commerce', 'Dynamic Pricing', 'Market Competition', 'Game Theory'],
+    description: 'Set prices, invest in quality, and outmaneuver rival firms in an oligopoly — but beware the prisoner\'s dilemma.',
+    concepts: ['Game Theory', 'Dynamic Pricing', 'Competitive Strategy', 'Business Intelligence'],
     frameworks: ['IMMERSE', 'SAIL'],
-    url: null,
-    status: 'coming-soon',
+    url: '/pricing-war',
+    status: 'live',
     icon: 'pricetag',
   },
   {

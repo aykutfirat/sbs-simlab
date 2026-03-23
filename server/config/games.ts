@@ -45,4 +45,13 @@ export const games: GameConfig[] = [
     icon: '🌙',
     status: 'active',
   },
+  {
+    slug: 'pricing-war',
+    name: 'Pricing War Arena',
+    description: 'Set prices, invest in quality, and outmaneuver rival firms in an oligopoly.',
+    type: 'multiplayer',
+    needsSocketIO: true,
+    icon: '⚔️',
+    status: 'active',
+  },
 ];

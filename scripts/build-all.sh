@@ -28,4 +28,8 @@ echo "--- Building Moon Survival ---"
 cd games/moon-survival && npm install --include=dev && npm run build && cd ../..
 
 echo ""
+echo "--- Building Pricing War ---"
+cd games/pricing-war && npm install --include=dev && npm run build && cd ../..
+
+echo ""
 echo "=== All builds complete ==="
