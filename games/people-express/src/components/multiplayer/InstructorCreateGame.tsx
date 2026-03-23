@@ -8,7 +8,7 @@ export default function InstructorCreateGame() {
   const [advanceMode, setAdvanceMode] = useState<AdvanceMode>('manual');
   const [timerDuration, setTimerDuration] = useState(120);
   const [maxTeams, setMaxTeams] = useState(6);
-  const [password, setPassword] = useState('');
+  const [password, setPassword] = useState(sessionStorage.getItem('instructorPassword') || '');
   const [error, setError] = useState('');
   const [creating, setCreating] = useState(false);
 
